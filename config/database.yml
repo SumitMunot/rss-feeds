@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  host: localhost
+  database: rss_dev
+  pool: 5
+  username: postgres
+  password: postgres
+  template: template0
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  host: localhost
+  database: rss_test1
+  pool: 5
+  username: postgres
+  password: postgres
+  template: template0
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  database: rss_pro
+  username: postgres
+  password: postgres
+  template: template0
